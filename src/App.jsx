@@ -17,6 +17,7 @@ function App() {
       <div style={styles.content}>
         <h1>Welcome to the React App!</h1>
         <p>This is a simple page with a top navigation bar.</p>
+        this is navbar 2
       </div>
     </div>
   );
