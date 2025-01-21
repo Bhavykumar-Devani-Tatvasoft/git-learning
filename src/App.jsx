@@ -19,6 +19,7 @@ function App() {
         <p>This is a simple page with a top navigation bar.</p>
         this is navbar 2
       </div>
+      This is for patch generation
     </div>
   );
 }
