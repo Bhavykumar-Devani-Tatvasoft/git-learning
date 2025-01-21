@@ -1,0 +1,47 @@
+From ed3048b3c12d03e6a5ce58ceb49c82a99ba393ff Mon Sep 17 00:00:00 2001
+From: Bhavykumar Devani <PCE43@server7.com>
+Date: Tue, 21 Jan 2025 17:09:16 +0530
+Subject: [PATCH] patch generation and apply
+
+---
+ src/App.jsx   | 2 +-
+ src/index.css | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/App.jsx b/src/App.jsxgit
+index 4306b70..546b47d 100644
+--- a/src/App.jsx
++++ b/src/App.jsx
+@@ -19,7 +19,7 @@ function App() {
+         <p>This is a simple page with a top navigation bar.</p>
+         this is navbar 2
+       </div>
+-      This is for patch generation
++      This is for patch generation, now i want to apply it in my code.
+     </div>
+   );
+ }
+diff --git a/src/index.css b/src/index.css
+index b549dcb..df102b5 100644
+--- a/src/index.css
++++ b/src/index.css
+@@ -68,5 +68,5 @@ button:focus-visible {
+ }
+ 
+ button{
+-  color:black;
++  color:blue;
+ }
+-- 
+2.47.1.windows.2
+
+
+
+generate patch file 
+git format-patch -1 HEAD
+
+by using below command other developer see apply this in their local...
+ git am .\0001-patch-generation-and-apply.patch
+
+
+
